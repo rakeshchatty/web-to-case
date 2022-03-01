@@ -1,0 +1,17 @@
+<script src="https://sandbox-whytebike-developer-edition.cs75.force.com/lightning/lightning.out.js"></script>
+
+<div id="lightningLocator"></div>
+
+<script>
+    $Lightning.use("c:embedFlowInExternalWebsiteApp",
+        function() {
+            $Lightning.createComponent(
+                "c:embedFlowInExternalWebsite",
+                { },                  
+                "lightningLocator",   
+                function(cmp) {}
+            );
+        },
+        'https://sandbox-whytebike-developer-edition.cs75.force.com'  // Site endpoint
+    );
+</script>
